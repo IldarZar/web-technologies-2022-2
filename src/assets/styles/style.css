@@ -1,0 +1,55 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+.p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.submit-button {
+    /*background: #5A98D0;*/
+    background: linear-gradient(to right, cornflowerblue, blueviolet);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+}
+
+.textbox {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.header {
+    background-image: url(https://i.pinimg.com/originals/e1/61/7a/e1617a3f08ea7aacbf158288137d9ffd.jpg);
+}
