@@ -45,24 +45,28 @@
     </div>
 
     <div class="get-consultation">
-        <h4 class="get-consultation__title">Leave your contacts</h4>
         <form
-                class="get-consultation-form"
-                action=""
-                method="post"
+            class="form get-consultation__form"
+            action=""
         >
-            <div class="get-consultation-form__phone-wrapper">
-                <input id="get-consultation-form__phone-input" class="get-consultation-form__phone-input">
-                <label for="get-consultation-form__phone-input" class="get-consultation-form__phone-label">label1</label>
+            <h4 class="form__title">
+                Leave your contacts and we will call you back
+                within 30 minutes
+            </h4>
+            <div class="form__phone">
+                <input id="get-consultation__phone-input" class="form__phone-input">
+                <label for="get-consultation__phone-input" class="form__phone-label">label1</label>
             </div>
 
-            <div class="get-consultation-form__fullname-wrapper">
-                <input id="get-consultation-form__fullname-input" class="get-consultation-form__fullname-input">
-                <label for="get-consultation-form__fullname-input" class="get-consultation-form__fullname-label">label2</label>
+            <div class="form__fullname">
+                <input id="get-consultation__fullname-input" class="form__fullname-input">
+                <label for="get-consultation__fullname-input" class="form__fullname-label">label2</label>
             </div>
         </form>
     </div>
 </div>
+
+<hr />
 
 <section class="development-cycle">
     <div class="development-cycle__technologies">
@@ -214,8 +218,8 @@
 
 </section>
 
-<section class="proud-of">
-    <div class="proud-of__header">
+<section class="projects">
+    <div class="projects__header">
         <h2>
             Projects we are proud of
         </h2>
@@ -223,38 +227,66 @@
             Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership
         </span>
     </div>
-    <div class="proud-of__tabs-wrapper">
-        <div class="proud-of__tabs">
-            <div class="proud-of__tab">
-                I-teka
-            </div>
-            <div class="proud-of__tab">
-                Dauletten
-            </div>
-            <div class="proud-of__tab">
-                Guru Bosch
-            </div>
-            <div class="proud-of__tab">
-                Santo
-            </div>
-            <div class="proud-of__tab">
-                Home Credit Bank
-            </div>
-            <div class="proud-of__tab">
-                BI Partners
-            </div>
-            <div class="proud-of__tab">
-                Europharma
-            </div>
+    <div class="projects__tabs-wrapper">
+        <div class="projects__tab">
+            I-teka
         </div>
-        <div class="proud-of__view-all-button">
-            <button>
-                View 100 more projects
-            </button>
+        <div class="projects__tab">
+            Dauletten
         </div>
+        <div class="projects__tab">
+            Guru Bosch
+        </div>
+        <div class="projects__tab">
+            Santo
+        </div>
+        <div class="projects__tab">
+            Home Credit Bank
+        </div>
+        <div class="projects__tab">
+            BI Partners
+        </div>
+        <div class="projects__tab">
+            Europharma
+        </div>
+        <button class="projects__view-all-button">
+            View 100 more projects
+        </button>
     </div>
-    <div class="proud-of__content">
+    <div class="projects__project">
+        <div class="projects__left-side-content">
+            <h6 class="projects__technology-title">I-teka</h6>
+            <span
+                class="projects__technology-description"
+            >
+                The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people,
+which gives more value.
+            </span>
+            <span class="projects__keywords">
+                Business analysis / iOS / Android / QA / UI/UX Design
+            </span>
+            <div class="projects__tags">
+                <div class="projects__location">
+                    <span class="projects__location-text">
+                        Kazakhstan
+                    </span>
+                </div>
+                <div class="projects__branch">
+                    <span class="projects__branch-text">
+                        Medicine
+                    </span>
+                </div>
+            </div>
+            <div class="statistics">
 
+            </div>
+            <div class="get-it-on-images">
+
+            </div>
+        </div>
+        <div class="projects__right-side-content">
+
+        </div>
     </div>
 </section>
 
@@ -269,15 +301,15 @@
             its cost and terms of its development
         </span>
     </div>
-    <form class="discussing-project__form">
-        <div class="discussing-project__phone-wrapper">
-            <input id="discussing-project__phone-input" class="discussing-project__phone-input">
-            <label for="discussing-project__phone-input" class="discussing-project__phone-label">label1</label>
+    <form class="form discussing-project__form">
+        <div class="form__phone">
+            <input id="discussing-project__form-phone" class="form__phone-input">
+            <label for="discussing-project__form-phone" class="form__phone-label">Best phone number</label>
         </div>
 
-        <div class="discussing-project__fullname-wrapper">
-            <input id="discussing-project__fullname-input" class="discussing-project__fullname-input">
-            <label for="discussing-project__fullname-input" class="discussing-project__fullname-label">label2</label>
+        <div class="form__fullname">
+            <input id="discussing-project__fullname-phone" class="form__fullname-input">
+            <label for="discussing-project__fullname-phone" class="form__fullname-label">Full name</label>
         </div>
     </form>
 </section>
@@ -339,60 +371,75 @@
 </section>
 
 <section class="our-team">
-    <div class="our-team__header">
-        <h2 class="our-team__title">Our team</h2>
-        <span class="our-team__description-top">
-            Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.
-        </span>
+    <div class="our-team__left-side">
+        <div class="our-team__header">
+            <h2 class="our-team__title">Our team</h2>
+            <span class="our-team__description-top">
+                Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.
+            </span>
+        </div>
+        <div class="our-team__content">
+            <div class="our-team__team-members">
+                <h2 class="our-team__team-members-number">
+                    28
+                </h2>
+                <span class="our-team__team-members-text">
+                    team members
+                </span>
+            </div>
+            <div class="our-team__projects">
+                <h2 class="our-team__projects-number">
+                    +100
+                </h2>
+                <span class="our-team__projects-text">
+                    projects
+                </span>
+            </div>
+            <div class="our-team__team-members">
+                <h2 class="our-team__team-members-number">
+                    7 years
+                </h2>
+                <span class="our-team__team-members-text">
+                    in IT sphere
+                </span>
+            </div>
+        </div>
+        <div class="our-team__description-bottom">
+            <span>
+                All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it
+            </span>
+        </div>
     </div>
-    <div class="our-team__content">
-        <div class="our-team__team-members">
-            <h2 class="our-team__team-members-number">
-                28
-            </h2>
-            <span class="our-team__team-members-text">
-                team members
-            </span>
-        </div>
-        <div class="our-team__projects">
-            <h2 class="our-team__projects-number">
-                +100
-            </h2>
-            <span class="our-team__projects-text">
-                projects
-            </span>
-        </div>
-        <div class="our-team__team-members">
-            <h2 class="our-team__team-members-number">
-                7 years
-            </h2>
-            <span class="our-team__team-members-text">
-                in IT sphere
-            </span>
-        </div>
-    </div>
-    <div class="our-team__description-bottom">
-        <span>
-            All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it
-        </span>
+
+    <div class="our-team__right-side">
+        <img src="./src/assets/img/our-team.png" alt="" srcset="">
     </div>
 </section>
 
 <section class="get-book">
-    <form class="get-book__form">
-        <div class="get-book__phone-wrapper">
-            <input id="get-book__phone-input" class="get-book__phone-input">
-            <label for="get-book__phone-input" class="get-book__phone-label">label1</label>
-        </div>
-        <div class="get-book__fullname-wrapper">
-            <input id="get-book__fullname-input" class="get-book__fullname-input">
-            <label for="get-book__fullname-input" class="get-book__fullname-label">label2</label>
-        </div>
-        <div class="get-book__email-wrapper">
-            <input id="get-book__email-input" class="get-book__email-input">
-            <label for="get-book__email-input" class="get-book__email-label">label2</label>
-        </div>
-    </form>
+    <div class="get-book__left-side">
+        <h3 class="get-book__header">
+            Get the book for free by leaving
+            your contacts
+        </h3>
+        <form class="form get-book__form">
+            <div class="get-book__phone-wrapper">
+                <input id="get-book__phone-input" class="form__phone-input">
+                <label for="get-book__phone-input" class="form__phone-label">label1</label>
+            </div>
+            <div class="form__fullname-wrapper">
+                <input id="get-book__fullname-input" class="form__fullname-input">
+                <label for="get-book__fullname-input" class="form__fullname-label">label2</label>
+            </div>
+            <div class="form__email-wrapper">
+                <input id="get-book__email-input" class="form__email-input">
+                <label for="get-book__email-input" class="form__email-label">label2</label>
+            </div>
+        </form>
+    </div>
+    <div class="get-book__right-side">
+        <img src="./src/assets/img/book.png" alt="">
+    </div>
 </section>
 
 <section class="faq">
