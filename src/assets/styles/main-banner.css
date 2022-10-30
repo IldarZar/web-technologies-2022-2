@@ -1,0 +1,121 @@
+/* --- MAIN BANNER --- */
+.main-banner {
+    max-width: 1600px;
+    width: 100%;
+    height: 900px;
+    max-height: 900px;
+    background: var(--light-gray);
+    padding-top: 160px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main-banner__top {
+    width: 50%;
+}
+
+.main-banner__bottom {
+    width: 60%;
+}
+
+.main-banner__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.main-banner__description {
+    margin-top: 24px;
+}
+
+.main-banner__title_highlighted {
+    color: var(--blue);
+}
+
+
+
+
+/* --- FORM --- */
+.main-banner__bottom-form {
+    display: grid;
+    margin-top: 64px;
+    grid-template-areas: "form-heading form-heading ." "form-phone form-fullname form-button";
+}
+
+.main-banner__form-heading {
+    padding-right: 30px;
+    grid-area: form-heading;
+}
+
+.main-banner__phone-wrapper {
+    grid-area: form-phone;
+}
+
+.main-banner__fullname-wrapper {
+    grid-area: form-fullname;
+}
+
+.main-banner__form-button {
+    grid-area: form-button;
+}
+
+
+
+/* --- BACKGROUND ANIMATION --- */
+.main-banner__background {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 290px;
+}
+
+.main-banner__picture {
+    width: 290px;
+    height: 630px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* --- CAROUSEL --- */
+.main-banner__left-carousel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: calc(654px * 6);
+    top: 0;
+    animation: left-carousel 25s linear infinite;
+}
+
+.main-banner__right-carousel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: calc(678px * 6);
+    width: 290px;
+    top: 0;
+    animation: right-carousel 25s linear infinite;
+}
+
+@keyframes left-carousel {
+    0% {
+        transform: rotate(-12deg) translate(-60px, -2616px);
+    }
+    100% {
+        transform: rotate(-12deg)  translate(-60px, -654px);
+    }
+}
+
+@keyframes right-carousel {
+    0% {
+        transform: rotate(-12deg) translate(300px, -654px);
+    }
+    100% {
+        transform: rotate(-12deg)  translate(300px,  -2616px);
+    }
+}

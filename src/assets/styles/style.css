@@ -1,0 +1,14 @@
+/* --- GENERAL --- */
+@import "./general.css";
+
+/* --- FONTS --- */
+@import "./fonts.css";
+
+/* --- COMPONENTS  --- */
+@import "./form.css";
+@import "./button.css";
+
+/* --- PAGE PARTS --- */
+@import "./header.css";
+@import "./main-banner.css";
+@import "./footer.css";

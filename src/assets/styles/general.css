@@ -1,0 +1,30 @@
+/* --- GENERAL --- */
+:root {
+    --blue: #2D66EE;
+    --dark-blue: #1D5AED;
+    --light-blue: rgba(45, 102, 238, 0.4);
+    --deep-blue: #101828;
+
+    --light-gray: #F2F4F7;
+    --dark-gray: #98A2B3;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+.body {
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
