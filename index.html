@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--    Title -->
+    <!-- Title -->
     <title>Document</title>
 
     <!-- Styles -->
@@ -15,80 +15,112 @@
 </head>
 <body>
 
-<header class="header container">
-    <span class="header__logo">
+
+
+
+<!-- MENU FOR TABLETS & MOBILES -->
+<div class="menu container">
+    <img class="menu__close-icon" src="src/assets/svg/close.svg" alt="" srcset="">
+    <div class="menu__logo">
         IT WEBSITE
-    </span>
+    </div>
+    <nav class="menu__nav">
+        <div class="menu__nav-element">Services</div>
+        <div class="menu__nav-element">Media</div>
+        <div class="menu__nav-element">Cases</div>
+        <div class="menu__nav-element">FAQ</div>
+        <div class="menu__nav-element">Contacts</div>
+    </nav>
+
+    <div class="menu__contacts">
+        <span class="menu__phone phone-icon">+7 (111) 111 11 11</span>
+        <span class="menu__phone phone-icon">+7 (111) 111 11 11</span>
+        <span class="menu__email email-icon">itcompany@gmail.com</span>
+    </div>
+</div>
+
+
+
+
+
+<!-- HEADER -->
+<header class="header container">
+    <img class="header__burger-icon" src="src/assets/svg/burger.svg" alt="" srcset="">
+    <div class="header__logo">
+        IT WEBSITE
+    </div>
     <nav class="header__nav">
-        <div class="header__nav-element">Services</div>
-        <div class="header__nav-element">Media</div>
-        <div class="header__nav-element">Cases</div>
-        <div class="header__nav-element">FAQ</div>
-        <div class="header__nav-element">Contacts</div>
+        <a href="#" class="header__nav-element">Services</a>
+        <a href="#" class="header__nav-element">Media</a>
+        <a href="#" class="header__nav-element">Cases</a>
+        <a href="#" class="header__nav-element">FAQ</a>
+        <a href="#" class="header__nav-element">Contacts</a>
     </nav>
     <div class="header__phone-numbers">
-        <img class="header__phone-icon" src="./src/assets/icons/smartphone.svg">
-        <div class="header__phone-number">
-            <span>+7 (111) 111 11 11</span>
-        </div>
-        <div class="header__phone-number">
-            <span>+7 (111) 111 11 11</span>
-        </div>
+        <a href="#" class="header__phone-number phone-icon">
+            +7 (111) 111 11 11
+        </a>
+        <a href="#" class="header__phone-number">
+            +7 (111) 111 11 11
+        </a>
     </div>
     <div class="header__email">
-        <img class="header__email-icon" src="./src/assets/icons/mail.svg">
-        <div class="header__email-address">
-            <span>itcompany@gmail.com</span>
-        </div>
+        <a href="#" class="header__email-address email-icon">
+            itcompany@gmail.com
+        </a>
     </div>
 </header>
 
-<section class="main-banner">
-    <div class="container">
-        <div class="main-banner__top">
-            <h1 class="main-banner__title">Development of <span
-                    class="main-banner__title_highlighted">mobile applications</span> and <span
-                    class="main-banner__title_highlighted"> web services </span> of any complexity</h1>
-            <div class="main-banner__description">
-                <span>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</span>
-            </div>
-        </div>
 
-        <div class="main-banner__bottom">
-            <form
-                class="form main-banner__bottom-form"
-                action=""
-            >
-                <h4 class="form__heading main-banner__form-heading">
-                    Leave your contacts and we will call you back
-                    within 30 minutes
-                </h4>
-                <div class="form__phone form__input-wrapper main-banner__phone-wrapper">
-                    <input id="main-banner__phone-input" class="form__phone-input form__input">
-                    <label for="main-banner__phone-input" class="form__phone-label form__input-label">Phone number</label>
-                </div>
 
-                <div class="form__fullname form__input-wrapper main-banner__fullname-wrapper">
-                    <input id="main-banner__fullname-input" class="form__fullname-input form__input">
-                    <label for="main-banner__fullname-input" class="form__fullname-label form__input-label">Full name</label>
-                </div>
 
-                <button class="main-banner__form-button blue-button">
-                    Get consultation
-                </button>
-            </form>
-        </div>
+
+<!-- MAIN-BANNER -->
+<section class="main-banner container">
+    <h1 class="main-banner__title">Development of
+        <span class="main-banner__title_highlighted">
+            mobile applications
+        </span>
+        and
+        <span class="main-banner__title_highlighted">
+            web services
+        </span>
+        of any complexity
+    </h1>
+    <div class="main-banner__description">
+        <span>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</span>
     </div>
+    <form
+        class="form main-banner__form"
+        action=""
+    >
+        <h4 class="form__heading main-banner__form-heading">
+            Leave your contacts and we will call you back
+            within 30 minutes
+        </h4>
+        <div class="form__phone form__input-wrapper main-banner__phone-wrapper">
+            <input id="main-banner__phone-input" class="form__phone-input form__input">
+            <label for="main-banner__phone-input" class="form__phone-label form__input-label">Phone number</label>
+        </div>
 
+        <div class="form__fullname form__input-wrapper main-banner__fullname-wrapper">
+            <input id="main-banner__fullname-input" class="form__fullname-input form__input">
+            <label for="main-banner__fullname-input" class="form__fullname-label form__input-label">Full name</label>
+        </div>
+
+        <button class="main-banner__form-button blue-button">
+            Get consultation
+        </button>
+    </form>
     <div class="main-banner__background">
         <div class="main-banner__carousel main-banner__left-carousel">
-            <img class="main-banner__first-picture main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
-            <img class="main-banner__second-picture main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
-            <img class="main-banner__third-picture main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
 
-            <img class="main-banner__first-picture main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
-            <img class="main-banner__second-picture main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
-            <img class="main-banner__third-picture main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
         </div>
         <div class="main-banner__carousel main-banner__right-carousel">
             <img class="main-banner__first-picture main-banner__picture" src="./src/assets/img/new-chat.png" alt="" srcset="">
@@ -103,147 +135,238 @@
 </section>
 
 
-<section className="development-cycle">
-    <div className="development-cycle__technologies">
-        <h2>Full development cycle</h2>
-        <span>We use proven technologies</span>
-        <div>
-            <h4>Web</h4>
-            <span>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ Nuxt / MySQL / Laravel / GO lang / django / Python</span>
+
+
+
+<!-- DEVELOPMENT-CYCLE -->
+<section class="development-cycle container">
+    <h2 class="development-cycle__technologies-heading">Full development cycle</h2>
+    <div class="development-cycle__technologies-description">We use proven technologies</div>
+
+    <div class="development-cycle__technologies">
+        <div class="development-cycle__web">
+            <h4 class="development-cycle__web-heading" >Web</h4>
+            <div class="development-cycle__web-technologies">
+                PHP <span class="development-cycle__blue-slash"> / </span>
+                Javascript <span class="development-cycle__blue-slash"> / </span>
+                Node.JS <span class="development-cycle__blue-slash"> / </span>
+                Web Socket <span class="development-cycle__blue-slash"> / </span>
+                Socket.io <span class="development-cycle__blue-slash"> / </span>
+                Vue.js <span class="development-cycle__blue-slash"> / </span>
+                Nuxt <span class="development-cycle__blue-slash"> / </span>
+                MySQL <span class="development-cycle__blue-slash"> / </span>
+                Laravel <span class="development-cycle__blue-slash"> / </span>
+                GO lang <span class="development-cycle__blue-slash"> / </span>
+                django <span class="development-cycle__blue-slash"> / </span>
+                Python
+            </div>
+        </div>
+
+        <div class="development-cycle__mobile">
+            <h4 class="development-cycle__mobile-heading" >Mobile</h4>
+            <div class="development-cycle__mobile-technologies">
+                Swift <span class="development-cycle__blue-slash"> / </span>
+                Kotlin <span class="development-cycle__blue-slash"> / </span>
+                Alamofire <span class="development-cycle__blue-slash"> / </span>
+                Firebase <span class="development-cycle__blue-slash"> / </span>
+                CoreData <span class="development-cycle__blue-slash"> / </span>
+                Room <span class="development-cycle__blue-slash"> / </span>
+                Realm <span class="development-cycle__blue-slash"> / </span>
+                Coroutine <span class="development-cycle__blue-slash"> / </span>
+                RxJava <span class="development-cycle__blue-slash"> / </span>
+                RxSwift <span class="development-cycle__blue-slash"> / </span>
+                Unit Test <span class="development-cycle__blue-slash"> / </span>
+                Navigation
+            </div>
         </div>
     </div>
-    <ul className="development-cycle__services">
-        <li className="development-cycle__service">iOS development</li>
-        <li className="development-cycle__service development-cycle__service_selected">Android development</li>
-        <li className="development-cycle__service">Web development</li>
-        <li className="development-cycle__service">UI/UX design</li>
-        <li className="development-cycle__service">Testing</li>
-        <li className="development-cycle__service">Launch</li>
-        <li className="development-cycle__service">IT consulting</li>
+    <ul class="development-cycle__services">
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="iOS development" class="development-cycle__service-text">
+                    iOS development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Android development" class="development-cycle__service-text">
+                    Android development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Web development" class="development-cycle__service-text">
+                    Web development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="UI/UX design" class="development-cycle__service-text">
+                    UI/UX design
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Testing" class="development-cycle__service-text">
+                    Testing
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Launch" class="development-cycle__service-text">
+                    Launch
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="IT consulting" class="development-cycle__service-text">
+                    IT consulting
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
     </ul>
 </section>
 
-<section class="industries">
-    <h2 class="industries__title">
-        Developed more than <span class="industries__title_highlighted">100</span> <br/>
-        projects in <span class="industries__title_highlighted">15</span> industries
-    </h2>
-    <div class="industries__content">
-        <div class="industry">
-            <div class="industry__img">
 
+
+
+
+<!-- INDUSTRIES -->
+<section class="projects container">
+    <h2 class="projects__industries-heading">
+        Developed more than <span class="projects__industries-heading_highlighted">100</span> <br/>
+        projects in <span class="projects__industries-heading_highlighted">15</span> industries
+    </h2>
+    <div class="projects__industries">
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/social-media.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 Social media
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
-
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/education.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
-                Fitness and sport
+                Education
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Bank
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Construction
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Game projects
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Eduction
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Auto, transport
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Medicine, health
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Restaurants, food delivery
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
-            </div>
-            <div class="industry__name">
-                Marketplaces
-            </div>
-        </div>
-        <div class="industry">
-            <div class="industry__img">
-
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/ar-technology.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 AR technology
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
-
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/fitness-and-sport.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Fitness and sport
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/auto-transport.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Auto, transport
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/tv-series.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 TV series
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
-
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/bank.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Bank
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/medicine.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Medicine, health
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/startups.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 Startups
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
-
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/construction.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Construction
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/food.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Restaurants, food delivery
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/religion.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 Religion
             </div>
         </div>
-        <div class="industry">
-            <div class="industry__img">
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/game-project.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Game projects
+            </div>
+        </div>
 
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/marketplaces.svg" alt="" srcset="">
+            </div>
+            <div class="industry__name">
+                Marketplaces
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/online-courses.svg" alt="" srcset="">
             </div>
             <div class="industry__name">
                 Online courses
@@ -251,81 +374,113 @@
         </div>
     </div>
 
-</section>
 
-
-<section class="projects">
-    <div class="projects__header">
-        <h2>
+    <div class="projects__best-projects">
+        <h2 class="projects__best-projects-heading">
             Projects we are proud of
         </h2>
-        <span>
+        <span class="projects__best-projects-description">
             Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership
         </span>
     </div>
     <div class="projects__tabs-wrapper">
-        <div class="projects__tab">
-            I-teka
+        <div class="projects__tabs">
+            <div id="i-teka" class="projects__tab projects__tab_selected">
+                I-teka
+            </div>
+            <div id="dauletten" class="projects__tab">
+                Dauletten
+            </div>
+            <div id="guru-bosch" class="projects__tab">
+                Guru Bosch
+            </div>
+            <div id="santo" class="projects__tab">
+                Santo
+            </div>
+            <div id="home-credit-bank" class="projects__tab">
+                Home Credit Bank
+            </div>
+            <div id="bi-partners" class="projects__tab">
+                BI Partners
+            </div>
+            <div id="europharma" class="projects__tab">
+                Europharma
+            </div>
         </div>
-        <div class="projects__tab">
-            Dauletten
-        </div>
-        <div class="projects__tab">
-            Guru Bosch
-        </div>
-        <div class="projects__tab">
-            Santo
-        </div>
-        <div class="projects__tab">
-            Home Credit Bank
-        </div>
-        <div class="projects__tab">
-            BI Partners
-        </div>
-        <div class="projects__tab">
-            Europharma
-        </div>
-        <button class="projects__view-all-button">
+
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_desktop">
             View 100 more projects
         </button>
     </div>
-    <div class="projects__project">
-        <div class="projects__left-side-content">
-            <h6 class="projects__technology-title">I-teka</h6>
-            <span
-                class="projects__technology-description"
-            >
-                The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people,
+
+    <img class="projects__project-image projects__project-image_mobile" src="/src/assets/img/i-teka.png" alt="" srcset="">
+
+    <div class="projects__project-content">
+        <h4 class="projects__technology-heading">
+            I-teka
+        </h4>
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_tablet">
+            View 100 more projects
+        </button>
+        <div
+            class="projects__technology-description"
+        >
+            The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people,
 which gives more value.
-            </span>
-            <span class="projects__keywords">
-                Business analysis / iOS / Android / QA / UI/UX Design
-            </span>
-            <div class="projects__tags">
-                <div class="projects__location">
-                    <span class="projects__location-text">
-                        Kazakhstan
-                    </span>
-                </div>
-                <div class="projects__branch">
-                    <span class="projects__branch-text">
-                        Medicine
-                    </span>
-                </div>
+        </div>
+        <div class="projects__keywords">
+            Business analysis <span class="blue-slash">/</span>
+            iOS <span class="blue-slash">/</span>
+            Android <span class="blue-slash">/</span>
+            QA <span class="blue-slash">/</span>
+            UI/UX Design
+        </div>
+        <div class="projects__tags">
+            <div class="projects__tag">
+                <span class="projects__tag-text location-blue-icon">
+                    Kazakhstan
+                </span>
             </div>
-            <div class="statistics">
-
-            </div>
-            <div class="get-it-on-images">
-
+            <div class="projects__tag">
+                <span class="projects__tag-text startups-icon">
+                    Medicine
+                </span>
             </div>
         </div>
-        <div class="projects__right-side-content">
-
+        <div class="projects__statistics">
+            <div class="projects__statistic">
+                <h2 class="projects__statistic-heading">
+                    400%
+                </h2>
+                <div class="projects__statistic-description">
+                    User Growth
+                </div>
+            </div>
+            <div class="projects__statistic">
+                <h2 class="projects__statistic-heading">
+                    + 200 000
+                </h2>
+                <div class="projects__statistic-description">
+                    Active Users
+                </div>
+            </div>
         </div>
+        <div class="get-it-on-images">
+            <img class="get-it-on-app-store" src="/src/assets/img/get-it-on-app-store.png" alt="" srcset="">
+            <img class="get-it-on-google-play" src="/src/assets/img/get-it-on-google-play.png" alt="" srcset="">
+        </div>
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_mobile">
+            View 100 more projects
+        </button>
+        <img class="projects__project-image" src="/src/assets/img/i-teka.png" alt="" srcset="">
     </div>
 </section>
 
+
+
+
+
+<!-- DISCUSSING PROJECT -->
 <section class="discussing-project">
     <div class="discussing-project__header">
         <h3>
@@ -350,6 +505,10 @@ which gives more value.
     </form>
 </section>
 
+
+
+
+<!-- DEVELOPMENT STAGES -->
 <section class="development-stages">
     <h2 class="development-stages__header">
         Application Development Stages
@@ -406,6 +565,11 @@ which gives more value.
     </div>
 </section>
 
+
+
+
+
+<!-- OUR TEAM -->
 <section class="our-team">
     <div class="our-team__left-side">
         <div class="our-team__header">
@@ -452,6 +616,10 @@ which gives more value.
     </div>
 </section>
 
+
+
+
+<!-- GET BOOK -->
 <section class="get-book">
     <div class="get-book__left-side">
         <h3 class="get-book__header">
@@ -478,6 +646,10 @@ which gives more value.
     </div>
 </section>
 
+
+
+
+<!-- FAQ -->
 <section class="faq">
     <div class="faq__accordions">
         <div class="faq__accordion accordion">
@@ -517,12 +689,17 @@ which gives more value.
     </div>
 </section>
 
+
+
+
+
+<!-- FOOTER -->
 <footer class="footer container">
     <h2 class="footer__heading">IT WEBSITE</h2>
     <div class="footer__content">
         <div class="footer__phone footer__content-item">
             <div class="footer__phone-top footer__item-top">
-                <img src="./src/assets/icons/smartphone-gray.svg" alt="" sizes="" srcset="">
+                <img src="src/assets/svg/smartphone-gray.svg" alt="" sizes="" srcset="">
 
                 <span class="footer__phone-text footer__item-top-text">Contact nums</span>
             </div>
@@ -534,7 +711,7 @@ which gives more value.
         </div>
         <div class="footer__post footer__content-item">
             <div class="footer__post-top footer__item-top">
-                <img src="./src/assets/icons/mail-gray.svg" alt="" srcset="">
+                <img src="src/assets/svg/mail-gray.svg" alt="" srcset="">
 
                 <span class="footer__post-text footer__item-top-text">
                     Post
@@ -546,7 +723,7 @@ which gives more value.
         </div>
         <div class="footer__address footer__content-item">
             <div class="footer__address-top footer__item-top">
-                <img src="./src/assets/icons/location.svg" alt="" srcset="">
+                <img src="src/assets/svg/location.svg" alt="" srcset="">
 
                 <span class="footer__address-text footer__item-top-text">
                     Address
@@ -559,7 +736,7 @@ which gives more value.
         </div>
         <div class="footer__leave-request footer__content-item">
             <div class="footer__leave-request-top footer__item-top">
-                <img src="./src/assets/icons/document.svg" alt="" srcset="">
+                <img src="src/assets/svg/document.svg" alt="" srcset="">
                 <span class="footer__leave-request-text footer__item-top-text">
                     Leave a request
                 </span>
@@ -570,13 +747,14 @@ which gives more value.
         </div>
     </div>
     <div class="footer__bottom">
-        <img class="footer__bottom-icon" src="./src/assets/icons/continent.svg" alt="">
+        <img class="footer__bottom-icon" src="src/assets/svg/continent.svg" alt="">
         <span class="footer__bottom-text">We work throughout world</span>
     </div>
 </footer>
 
-<script>
 
+
+<script>
     // Скрытие хедера при скролле вниз
     const header = document.querySelector('.header')
     let prevScrollState = window.scrollY;
@@ -592,6 +770,44 @@ which gives more value.
             header.classList.remove('header_hidden')
 
         prevScrollState = currentScrollState
+    })
+
+
+
+    // Нажатие на бургер-меню в хедере
+    let menu = null;
+    document.querySelector('.header__burger-icon').addEventListener('click', () => {
+        menu = document.querySelector('.menu');
+        menu.classList.add('menu_active');
+    });
+
+
+
+    // Нажатие на крестик в меню
+    document.querySelector('.menu__close-icon').addEventListener('click', () => {
+        menu.classList.remove('menu_active')
+    });
+
+
+
+    // Делаем таб активным по клику
+    let projectTabs = [...document.querySelectorAll('.projects__tab')];
+    let currentTab = projectTabs[0];
+    projectTabs.forEach((projectTab) => {
+        projectTab.addEventListener('click', (e) => {
+
+            const className = 'projects__tab_selected';
+
+            if (!e.target.id !== currentTab.id) {
+                // e.target - другой таб, отличающийся от currentTab
+                // => убираем у currentTab модификатор selected
+                currentTab.classList.remove(className);
+
+                // Новому табу даем тот же модификатор
+                e.target.classList.add(className);
+                currentTab = e.target;
+            }
+        })
     })
 </script>
 </body>

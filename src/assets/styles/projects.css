@@ -1,0 +1,340 @@
+/* --- PROJECTS --- */
+.projects {
+    background-color: var(--gray-100);
+
+}
+
+.projects__industries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 16px;
+    margin-top: 28px;
+}
+
+
+
+
+/* --- PROJECT (A SINGLE ELEMENT) --- */
+.projects__industry {
+    display: flex;
+    align-items: center;
+}
+
+.industry__name {
+    margin-left: 16px;
+}
+
+.projects__industry-icon-background {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__industries-heading_highlighted {
+    color: var(--blue);
+}
+
+
+
+/* --- BEST PROJECTS --- */
+.projects__best-projects {
+    margin-top: 120px;
+}
+
+.projects__best-projects-description {
+    max-width: 600px;
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: var(--gray-900);
+}
+
+
+
+
+/* TABS */
+.projects__tabs-wrapper {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.projects__tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.projects__all-projects-button {
+    position: relative;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.projects__all-projects-button_desktop {
+    margin-right: 54px;
+}
+
+.projects__all-projects-button_tablet {
+    display: none;
+    grid-area: tablet-button;
+}
+
+.projects__all-projects-button_mobile {
+    display: none;
+    grid-area: mobile-button;
+}
+
+
+
+
+
+/* A SINGLE TAB OF PROJECTS */
+.projects__tab {
+    cursor: pointer;
+    margin: 0 16px;
+    white-space: nowrap;
+}
+
+.projects__tab_selected {
+    border-bottom: 2px solid var(--blue);
+    margin-bottom: -2px;
+}
+
+
+
+
+/* --- TAB CONTENT --- */
+.projects__project-content {
+    display: grid;
+    grid-template-areas:
+        "technology-heading project-image"
+        "technology-description project-image"
+        "keywords project-image"
+        "tags project-image"
+        "statistics project-image"
+        "get-it-on-images .";
+    margin-top: 60px;
+}
+
+.projects__technology-heading {
+    grid-area: technology-heading;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 144%;
+    letter-spacing: 0.326451px;
+    color: var(--gray-900);
+}
+
+.projects__technology-description {
+    grid-area: technology-description;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: var(--gray-900);
+    margin-top: 32px;
+}
+
+.projects__keywords {
+    grid-area: keywords;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: var(--gray-600);
+}
+
+.projects__tags {
+    grid-area: tags;
+    margin-top: 40px;
+    margin-left: 32px;
+    display: flex;
+}
+
+.projects__tag:not(:first-child) {
+    margin-left: 64px;
+}
+
+.projects__project-image {
+    grid-area: project-image;
+    max-height: 326px;
+}
+
+.projects__project-image_mobile {
+    display: none;
+}
+
+
+
+/* --- STATISTICS */
+.projects__statistics {
+    grid-area: statistics;
+    margin-top: 40px;
+    display: flex;
+}
+
+.projects__statistic {
+    margin-right: 48px;
+}
+
+.projects__statistic-heading {
+    white-space: nowrap;
+}
+
+.projects__statistic-description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+    color: var(--gray-500);
+    margin-top: 8px;
+}
+
+
+
+/* --- GET IT ON  --- */
+.get-it-on-images {
+    grid-area: get-it-on-images;
+    display: flex;
+    margin-top: 40px;
+}
+
+.get-it-on-app-store {
+    margin-right: 16px;
+}
+
+
+
+/* --- TABLET --- */
+@media (max-width: 767px) {
+    .projects__all-projects-button_desktop {
+        display: none;
+    }
+
+    .projects__all-projects-button_tablet {
+        display: block;
+    }
+
+    .projects__tags {
+        margin-left: 36px;
+    }
+
+    .projects__tabs {
+        flex-wrap: nowrap;
+    }
+
+    .projects__tab {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        white-space: nowrap;
+    }
+
+    .projects__project-content {
+        display: grid;
+        grid-template-areas:
+            "technology-heading tablet-button"
+            "technology-description technology-description"
+            "keywords keywords"
+            "tags project-image"
+            "statistics project-image"
+            "get-it-on-images project-image";
+        margin-top: 60px;
+    }
+
+    .projects__keywords {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+    }
+
+    .projects__project-image {
+        grid-area: project-image;
+        max-width: 368px;
+        height: 225px;
+    }
+
+
+
+    .get-it-on-images {
+        margin-top: 32px;
+    }
+
+    .get-it-on-app-store {
+        height: 38px;
+    }
+
+    .get-it-on-google-play {
+        height: 38px;
+    }
+
+    .industries__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects__industries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 426px) {
+
+    .projects__project-content {
+        grid-template-areas:
+        "technology-heading"
+        "technology-description"
+        "keywords"
+        "tags"
+        "statistics"
+        "get-it-on-images"
+        "mobile-button";
+    }
+
+    .projects__all-projects-button_desktop {
+        display: none;
+    }
+
+    .projects__all-projects-button_tablet {
+        display: none;
+        grid-area: tablet-button;
+    }
+
+    .projects__all-projects-button_mobile {
+        display: block;
+        grid-area: mobile-button;
+        margin: 32px auto 0;
+        padding: 11px 50px;
+    }
+
+
+    .projects__tabs {
+        flex-wrap: wrap;
+    }
+
+
+    .projects__best-projects {
+        margin-top: 44px;
+    }
+
+    .projects__project-image {
+        display: none;
+    }
+
+    .projects__project-image_mobile {
+        display: block;
+    }
+}
