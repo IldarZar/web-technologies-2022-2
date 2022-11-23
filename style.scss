@@ -1,0 +1,51 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.caption {
+  color: #9a9a9a;
+}
+
+.list-item {
+  font-size: 16px;
+}
+
+.list-item__inner {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.list-item__items {
+  padding-left: 1.5em;
+  display: none;
+}
+
+.control-icon {
+  width: 1em;
+  height: 1em;
+  opacity: .2;
+  transition: .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.list-item__arrow {
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+}
+
+.list-item__folder {
+  width: 2em;
+}
+
+.list-item_open > .list-item__items {
+  display: block;
+}
+
+.list-item_open > .list-item__inner .list-item__arrow {
+  transform: rotate(180deg);
+}
