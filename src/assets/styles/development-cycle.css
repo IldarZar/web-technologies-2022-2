@@ -64,6 +64,7 @@
 
 .development-cycle__service {
     margin-bottom: 24px;
+    display: flex;
 }
 
 .development-cycle__service-text-wrapper {
