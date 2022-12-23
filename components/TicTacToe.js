@@ -50,6 +50,10 @@ export const TicTacToe = {
     this.boxes.forEach(box => {
       box.addEventListener('click', event => {
 
+        // проверка на непустое значение
+        if (event.target.innerText)
+          return;
+
         // изменение значения элемента в матрице
         this.setBlockValue(event.target)
         // изменение значения элемента в дом дереве
@@ -60,6 +64,7 @@ export const TicTacToe = {
           // изменение статуса игры
           this.setGameEndStatus()
         }
+
 
         // проверка на наличие пустых блоков
         if (!this.checkHasEmptyBlocks()) {
