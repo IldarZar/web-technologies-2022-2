@@ -38,18 +38,13 @@ html {
     color: var(--blue);
 }
 
-
-
-
 @media (max-width: 767px) {
     .container {
         margin: 0 auto;
         padding-left: 40px;
         padding-right: 40px;
     }
-
 }
-
 
 @media (max-width: 426px) {
     .container {
