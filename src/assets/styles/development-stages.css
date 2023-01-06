@@ -1,0 +1,79 @@
+.development-stages__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 144%; }
+
+.development-stages__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px; }
+
+.development-stages__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.development-stages__card {
+  padding: 24px;
+  max-width: 392px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 2px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-x: right; }
+  .development-stages__card:not(:last-child) {
+    margin-bottom: 24px; }
+  .development-stages__card-1 {
+    background-image: url("/src/assets/img/card-number-1.png"); }
+  .development-stages__card-2 {
+    background-image: url("/src/assets/img/card-number-2.png"); }
+  .development-stages__card-3 {
+    background-image: url("/src/assets/img/card-number-3.png"); }
+  .development-stages__card-4 {
+    background-image: url("/src/assets/img/card-number-4.png"); }
+  .development-stages__card-5 {
+    background-image: url("/src/assets/img/card-number-5.png"); }
+  .development-stages__card-6 {
+    background-image: url("/src/assets/img/card-number-6.png"); }
+  .development-stages__card-header {
+    display: flex;
+    align-items: center; }
+    .development-stages__card-header-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px; }
+  .development-stages__card-icon {
+    margin-right: 24px; }
+  .development-stages__card-content {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px; }
+
+@media (max-width: 768px) {
+  .development-stages__content {
+    flex-direction: column; }
+  .development-stages__column:not(:last-child) {
+    margin-bottom: 24px; }
+  .development-stages__card {
+    max-width: unset;
+    display: grid;
+    grid-template-areas: "header number" "content number";
+    grid-column-gap: 32px; }
+    .development-stages__card-header {
+      grid-area: header; }
+    .development-stages__card-content {
+      grid-area: content;
+      width: 80%; }
+    .development-stages__card-number {
+      grid-area: number;
+      position: relative;
+      right: 0;
+      top: 0; } }
+
+@media (max-width: 426px) {
+  .development-stages__card-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    width: 70%; } }

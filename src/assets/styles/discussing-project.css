@@ -1,0 +1,48 @@
+.discussing-project {
+  background-color: var(--blue);
+  background-image: url("/src/assets/img/Noise.png");
+  display: flex;
+  justify-content: space-between; }
+  .discussing-project__heading {
+    font-size: 36px;
+    line-height: 144%;
+    color: white;
+    margin-bottom: 24px; }
+  .discussing-project__description {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px; }
+  .discussing-project__form {
+    display: grid;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    grid-template-areas: "phone fullname" ". button"; }
+  .discussing-project__fullname {
+    grid-area: fullname; }
+  .discussing-project__phone {
+    grid-area: phone; }
+  .discussing-project__button {
+    grid-area: button;
+    justify-self: end; }
+
+@media (max-width: 768px) {
+  .discussing-project {
+    flex-direction: column;
+    padding: 20px 32px; }
+    .discussing-project__form {
+      margin-top: 32px;
+      max-width: 500px;
+      grid-row-gap: 24px; } }
+
+@media (max-width: 426px) {
+  .discussing-project {
+    padding: 34px 16px; }
+    .discussing-project__form {
+      grid-template-areas: "phone" "fullname" "button"; }
+    .discussing-project__phone-input {
+      width: 100%; }
+    .discussing-project__fullname-input {
+      width: 100%; }
+    .discussing-project__button {
+      justify-self: center; } }
