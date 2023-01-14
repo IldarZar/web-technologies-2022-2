@@ -1,0 +1,53 @@
+/* --- GENERAL --- */
+:root {
+    --blue: #2D66EE;
+    --dark-blue: #1D5AED;
+    --light-blue: rgba(45, 102, 238, 0.4);
+
+    --gray-100: #F2F4F7;
+    --gray-200: #E4E7EC;
+    --gray-300: #D0D5DD;
+    --gray-400: #98A2B3;
+    --gray-500: #667085;
+    --gray-600: #475467;
+    --gray-700: #344054;
+    --gray-800: #1D2939;
+    --gray-900: #101828;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 80px 108px;
+    max-width: 1440px;
+}
+
+.blue-slash {
+    color: var(--blue);
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 426px) {
+    .container {
+        padding: 32px 16px;
+    }
+}

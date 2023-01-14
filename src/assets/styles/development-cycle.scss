@@ -1,0 +1,126 @@
+.development-cycle {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    gap: 32px;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-areas:
+            "technologies-heading services"
+            "technologies-description services"
+            "technologies services";
+    &__technologies {
+        grid-area: technologies;
+        display: flex;
+        flex-direction: column;
+        &-heading {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            grid-area: technologies-heading;
+        }
+        &-description {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            grid-area: technologies-description;
+        }
+    }
+    &__web {
+        grid-area: web-technologies;
+        &-heading {
+            margin-bottom: 16px;
+        }
+    }
+     &__mobile {
+         grid-area: mobile-technologies;
+         margin-top: 32px;
+         &-heading {
+             margin-bottom: 16px;
+         }
+     }
+    &__blue-slash {
+        color: var(--blue);
+    }
+    &__services {
+        grid-area: services;
+        margin: 10px auto 0;
+        list-style: none;
+    }
+    &__service {
+        margin-bottom: 24px;
+        display: flex;
+        &-text {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::before {
+                display: block;
+                content: attr(title);
+                font-weight: bold;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            &-wrapper {
+                margin-right: 21px;
+                display: inline-block;
+                &:hover {
+                    border-bottom: 1px solid var(--blue);
+                    margin-bottom: -1px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+/* --- TABLET --- */
+@media (max-width: 768px) {
+    .development-cycle {
+        padding-top: 32px;
+        padding-bottom: 48px;
+        grid-template-areas:
+            "technologies-heading technologies-heading"
+            "technologies-description technologies-description "
+            "technologies services";
+        &__web-technologies,
+        &__mobile-technologies {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.408px;
+            color: #344054;
+        }
+        &__service {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.38px;
+        }
+    }
+}
+
+/* --- PHONE --- */
+@media (max-width: 426px) {
+    .development-cycle {
+        display: block;
+        &__technologies-description {
+            margin-top: 32px;
+        }
+        &__technologies {
+            margin-top: 32px;
+            &-heading {
+                font-size: 28px;
+            }
+        }
+        &__services {
+            margin-top: 32px;
+        }
+        &__mobile-technologies,
+        &__web-technologies {
+            width: 70%;
+        }
+    }
+}

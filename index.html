@@ -5,9 +5,831 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Первый проект</title>
+
+    <!-- Title -->
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link href="src/assets/styles/style.css" rel="stylesheet" />
 </head>
 <body>
-    hello world from Ildar
+
+<!-- MENU FOR TABLETS & MOBILES -->
+<div class="menu container">
+    <img class="menu__close-icon" src="src/assets/svg/close.svg" alt="" srcset="">
+    <div class="menu__logo">
+        IT WEBSITE
+    </div>
+    <nav class="menu__nav">
+        <div class="menu__nav-element">Services</div>
+        <div class="menu__nav-element">Media</div>
+        <div class="menu__nav-element">Cases</div>
+        <div class="menu__nav-element">FAQ</div>
+        <div class="menu__nav-element">Contacts</div>
+    </nav>
+
+    <div class="menu__contacts">
+        <span class="menu__phone phone-icon">+7 (111) 111 11 11</span>
+        <span class="menu__phone phone-icon">+7 (111) 111 11 11</span>
+        <span class="menu__email email-icon">itcompany@gmail.com</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="header container">
+    <img class="header__burger-icon" src="src/assets/svg/burger.svg" alt="" srcset="">
+    <div class="header__logo">
+        IT WEBSITE
+    </div>
+    <nav class="header__nav">
+        <a href="#" class="header__nav-element">Services</a>
+        <a href="#" class="header__nav-element">Media</a>
+        <a href="#" class="header__nav-element">Cases</a>
+        <a href="#" class="header__nav-element">FAQ</a>
+        <a href="#" class="header__nav-element">Contacts</a>
+    </nav>
+    <div class="header__phone-numbers">
+        <a href="#" class="header__phone-number phone-icon">
+            +7 (111) 111 11 11
+        </a>
+        <a href="#" class="header__phone-number">
+            +7 (111) 111 11 11
+        </a>
+    </div>
+    <div class="header__email">
+        <a href="#" class="header__email-address email-icon">
+            itcompany@gmail.com
+        </a>
+    </div>
+</header>
+
+<!-- MAIN-BANNER -->
+<section class="main-banner container">
+    <h1 class="main-banner__title">Development of
+        <span class="main-banner__title_highlighted">
+            mobile applications
+        </span>
+        and
+        <span class="main-banner__title_highlighted">
+            web services
+        </span>
+        of any complexity
+    </h1>
+    <div class="main-banner__description">
+        <span>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</span>
+    </div>
+    <form
+        class="form main-banner__form"
+        action=""
+    >
+        <h4 class="form__heading main-banner__form-heading">
+            Leave your contacts and we will call you back
+            within 30 minutes
+        </h4>
+        <div class="form__phone form__input-wrapper main-banner__phone-wrapper">
+            <input id="main-banner__phone-input" class="form__phone-input form__input">
+            <label for="main-banner__phone-input" class="form__phone-label form__input-label">Phone number</label>
+        </div>
+
+        <div class="form__fullname form__input-wrapper main-banner__fullname-wrapper">
+            <input id="main-banner__fullname-input" class="form__fullname-input form__input">
+            <label for="main-banner__fullname-input" class="form__fullname-label form__input-label">Full name</label>
+        </div>
+
+        <button class="main-banner__form-button blue-button">
+            Get consultation
+        </button>
+    </form>
+    <div class="main-banner__background">
+        <div class="main-banner__carousel main-banner__left-carousel">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
+
+            <img class="main-banner__picture" src="./src/assets/img/feedback-details.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/feedback-comment.png" alt="" srcset="">
+            <img class="main-banner__picture" src="./src/assets/img/message.png" alt="" srcset="">
+        </div>
+        <div class="main-banner__carousel main-banner__right-carousel">
+            <img class="main-banner__first-picture main-banner__picture" src="./src/assets/img/new-chat.png" alt="" srcset="">
+            <img class="main-banner__second-picture main-banner__picture" src="./src/assets/img/organisation-list-main.png" alt="" srcset="">
+            <img class="main-banner__third-picture main-banner__picture" src="./src/assets/img/settings.png" alt="" srcset="">
+
+            <img class="main-banner__first-picture main-banner__picture" src="./src/assets/img/new-chat.png" alt="" srcset="">
+            <img class="main-banner__second-picture main-banner__picture" src="./src/assets/img/organisation-list-main.png" alt="" srcset="">
+            <img class="main-banner__third-picture main-banner__picture" src="./src/assets/img/settings.png" alt="" srcset="">
+        </div>
+    </div>
+</section>
+
+<!-- DEVELOPMENT-CYCLE -->
+<section class="development-cycle container">
+    <h2 class="development-cycle__technologies-heading">Full development cycle</h2>
+    <div class="development-cycle__technologies-description">We use proven technologies</div>
+
+    <div class="development-cycle__technologies">
+        <div class="development-cycle__web">
+            <h4 class="development-cycle__web-heading" >Web</h4>
+            <div class="development-cycle__web-technologies">
+                PHP <span class="development-cycle__blue-slash"> / </span>
+                Javascript <span class="development-cycle__blue-slash"> / </span>
+                Node.JS <span class="development-cycle__blue-slash"> / </span>
+                Web Socket <span class="development-cycle__blue-slash"> / </span>
+                Socket.io <span class="development-cycle__blue-slash"> / </span>
+                Vue.js <span class="development-cycle__blue-slash"> / </span>
+                Nuxt <span class="development-cycle__blue-slash"> / </span>
+                MySQL <span class="development-cycle__blue-slash"> / </span>
+                Laravel <span class="development-cycle__blue-slash"> / </span>
+                GO lang <span class="development-cycle__blue-slash"> / </span>
+                django <span class="development-cycle__blue-slash"> / </span>
+                Python
+            </div>
+        </div>
+
+        <div class="development-cycle__mobile">
+            <h4 class="development-cycle__mobile-heading" >Mobile</h4>
+            <div class="development-cycle__mobile-technologies">
+                Swift <span class="development-cycle__blue-slash"> / </span>
+                Kotlin <span class="development-cycle__blue-slash"> / </span>
+                Alamofire <span class="development-cycle__blue-slash"> / </span>
+                Firebase <span class="development-cycle__blue-slash"> / </span>
+                CoreData <span class="development-cycle__blue-slash"> / </span>
+                Room <span class="development-cycle__blue-slash"> / </span>
+                Realm <span class="development-cycle__blue-slash"> / </span>
+                Coroutine <span class="development-cycle__blue-slash"> / </span>
+                RxJava <span class="development-cycle__blue-slash"> / </span>
+                RxSwift <span class="development-cycle__blue-slash"> / </span>
+                Unit Test <span class="development-cycle__blue-slash"> / </span>
+                Navigation
+            </div>
+        </div>
+    </div>
+    <ul class="development-cycle__services">
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="iOS development" class="development-cycle__service-text">
+                    iOS development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Android development" class="development-cycle__service-text">
+                    Android development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Web development" class="development-cycle__service-text">
+                    Web development
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="UI/UX design" class="development-cycle__service-text">
+                    UI/UX design
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Testing" class="development-cycle__service-text">
+                    Testing
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="Launch" class="development-cycle__service-text">
+                    Launch
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+        <li class="development-cycle__service">
+            <div class="development-cycle__service-text-wrapper">
+                <a href="" title="IT consulting" class="development-cycle__service-text">
+                    IT consulting
+                </a>
+            </div>
+            <img class="development-cycle__service-icon" src="src/assets/svg/arrow.svg" alt="" srcset="">
+        </li>
+    </ul>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="projects container">
+    <h2 class="projects__industries-heading">
+        Developed more than <span class="projects__industries-heading_highlighted">100</span> <br/>
+        projects in <span class="projects__industries-heading_highlighted">15</span> industries
+    </h2>
+    <div class="projects__industries">
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/social-media.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Social media
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/education.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Education
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/ar-technology.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                AR technology
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/fitness-and-sport.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Fitness and sport
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/auto-transport.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Auto, transport
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/tv-series.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                TV series
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/bank.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Bank
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/medicine.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Medicine, health
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/startups.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Startups
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/construction.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Construction
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/food.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Restaurants, food delivery
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/religion.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Religion
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/game-project.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Game projects
+            </div>
+        </div>
+
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/marketplaces.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Marketplaces
+            </div>
+        </div>
+        <div class="projects__industry">
+            <div class="projects__industry-icon-background">
+                <img src="/src/assets/svg/online-courses.svg" alt="" srcset="">
+            </div>
+            <div class="projects__industry-name">
+                Online courses
+            </div>
+        </div>
+    </div>
+
+
+    <div class="projects__best-projects">
+        <h2 class="projects__best-projects-heading">
+            Projects we are proud of
+        </h2>
+        <span class="projects__best-projects-description">
+            Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership
+        </span>
+    </div>
+    <div class="projects__tabs-wrapper">
+        <div class="projects__tabs">
+            <div id="i-teka" class="projects__tab projects__tab_selected">
+                I-teka
+            </div>
+            <div id="dauletten" class="projects__tab">
+                Dauletten
+            </div>
+            <div id="guru-bosch" class="projects__tab">
+                Guru Bosch
+            </div>
+            <div id="santo" class="projects__tab">
+                Santo
+            </div>
+            <div id="home-credit-bank" class="projects__tab">
+                Home Credit Bank
+            </div>
+            <div id="bi-partners" class="projects__tab">
+                BI Partners
+            </div>
+            <div id="europharma" class="projects__tab">
+                Europharma
+            </div>
+        </div>
+
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_desktop">
+            View 100 more projects
+        </button>
+    </div>
+
+    <img class="projects__project-image projects__project-image_mobile" src="/src/assets/img/i-teka.png" alt="" srcset="">
+
+    <div class="projects__project-content">
+        <h4 class="projects__technology-heading">
+            I-teka
+        </h4>
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_tablet">
+            View 100 more projects
+        </button>
+        <div
+            class="projects__technology-description"
+        >
+            The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people,
+which gives more value.
+        </div>
+        <div class="projects__keywords">
+            Business analysis <span class="blue-slash">/</span>
+            iOS <span class="blue-slash">/</span>
+            Android <span class="blue-slash">/</span>
+            QA <span class="blue-slash">/</span>
+            UI/UX Design
+        </div>
+        <div class="projects__tags">
+            <div class="projects__tag">
+                <span class="projects__tag-text location-blue-icon">
+                    Kazakhstan
+                </span>
+            </div>
+            <div class="projects__tag">
+                <span class="projects__tag-text startups-icon">
+                    Medicine
+                </span>
+            </div>
+        </div>
+        <div class="projects__statistics">
+            <div class="projects__statistic">
+                <h2 class="projects__statistic-heading">
+                    400%
+                </h2>
+                <div class="projects__statistic-description">
+                    User Growth
+                </div>
+            </div>
+            <div class="projects__statistic">
+                <h2 class="projects__statistic-heading">
+                    + 200 000
+                </h2>
+                <div class="projects__statistic-description">
+                    Active Users
+                </div>
+            </div>
+        </div>
+        <div class="get-it-on-images">
+            <img class="get-it-on-app-store" src="/src/assets/img/get-it-on-app-store.png" alt="" srcset="">
+            <img class="get-it-on-google-play" src="/src/assets/img/get-it-on-google-play.png" alt="" srcset="">
+        </div>
+        <button class="projects__all-projects-button blue-button projects__all-projects-button_mobile">
+            View 100 more projects
+        </button>
+        <img class="projects__project-image" src="/src/assets/img/i-teka.png" alt="" srcset="">
+    </div>
+</section>
+
+<!-- DISCUSSING PROJECT -->
+<section class="discussing-project container">
+    <div>
+        <h3 class="discussing-project__heading">
+            Let's discuss <br>
+            Your project
+        </h3>
+        <span class="discussing-project__description">
+            Let's figure out how to create an effective application,<br>
+            its cost and terms of its development
+        </span>
+    </div>
+    <form class="form discussing-project__form">
+        <div class="form__input-wrapper discussing-project__phone">
+            <input id="discussing-project__form-phone" class="form__input discussing-project__phone-input">
+            <label for="discussing-project__form-phone" class="form__input-label discussing-project__phone-label">Best phone number</label>
+        </div>
+
+        <div class="form__input-wrapper discussing-project__fullname">
+            <input id="discussing-project__fullname-phone" class="form__input discussing-project__fullname-input">
+            <label for="discussing-project__fullname-phone" class="form__input-label discussing-project__fullname-label">Full name</label>
+        </div>
+
+        <button class="blue-button discussing-project__button">Discuss the project</button>
+    </form>
+</section>
+
+<!-- DEVELOPMENT STAGES -->
+<section class="development-stages container">
+    <h2 class="development-stages__header">
+        Application Development Stages
+    </h2>
+    <div class="development-stages__content">
+        <div class="development-stages__column">
+            <div class="development-stages__card development-stages__card-1">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/plan.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                        Analysis
+                    </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.
+                </div>
+            </div>
+            <div class="development-stages__card development-stages__card-2">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/design.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                        Analysis
+                    </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.
+                </div>
+            </div>
+            <div class="development-stages__card development-stages__card-3">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/computer-coding.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                        Development
+                    </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We create an extensible architecture, write clean and stable code. We integrate with customer technologies.
+                </div>
+            </div>
+        </div>
+        <div class="development-stages__column">
+            <div class="development-stages__card development-stages__card-4">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/copyright.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                        Testing
+                    </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions
+                </div>
+            </div>
+            <div class="development-stages__card development-stages__card-5">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/hosting.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                    Launching
+                </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We design the application page and publish it in the App Store and Google Play stores.
+                </div>
+            </div>
+            <div class="development-stages__card development-stages__card-6">
+                <div class="development-stages__card-header">
+                    <img src="/src/assets/img/mobile-setting.png" alt="" class="development-stages__card-icon">
+                    <span class="development-stages__card-header-text">
+                        Support
+                    </span>
+                </div>
+                <div class="development-stages__card-content">
+                    We monitor the stability of the application, update it for new devices and versions of iOS and Android.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR TEAM -->
+<section class="our-team container">
+    <h2 class="our-team__title">Our team</h2>
+    <span class="our-team__description-top">
+        Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.
+    </span>
+    <div class="our-team__statistics">
+        <div class="our-team__parameter">
+            <h2 class="our-team__parameter-value">
+                28
+            </h2>
+            <span class="our-team__parameter-description">
+                team members
+            </span>
+        </div>
+        <div class="our-team__parameter">
+            <h2 class="our-team__parameter-value">
+                +100
+            </h2>
+            <span class="our-team__parameter-description">
+                projects
+            </span>
+        </div>
+        <div class="our-team__parameter">
+            <h2 class="our-team__parameter-value">
+                7 years
+            </h2>
+            <span class="our-team__parameter-description">
+                in IT sphere
+            </span>
+        </div>
+    </div>
+    <div class="our-team__description-bottom">
+        <span>
+            All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it
+        </span>
+    </div>
+    <div class="our-team__video">
+        <img class="our-team__photo-preview" src="/src/assets/img/our-team.png" alt="">
+        <div class="our-team__play-button">
+            <img class="our-team__play-icon" src="/src/assets/img/play.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- GET BOOK -->
+<section class="get-book container">
+    <h3 class="get-book__header">
+        Get the book for free by leaving
+        your contacts
+    </h3>
+    <form class="form get-book__form">
+        <div class="form__input-wrapper get-book__phone">
+            <input id="get-book__phone-input" class="form__input get-book__phone-input">
+            <label for="get-book__phone-input" class="form__input-label get-book__phone-label">Phone number</label>
+        </div>
+        <div class="form__input-wrapper get-book__fullname">
+            <input id="get-book__fullname-input" class="form__input get-book__fullname-input">
+            <label for="get-book__fullname-input" class="form__input-label get-book__fullname-label">Your fullname</label>
+        </div>
+        <div class="form__input-wrapper get-book__email">
+            <input id="get-book__email-input" class="form__input get-book__email-input">
+            <label for="get-book__email-input" class="form__input-label get-book__email-label">Email</label>
+        </div>
+        <button class="blue-button get-book__button">
+            Send me ebook to my mail
+        </button>
+    </form>
+    <img src="./src/assets/img/book.png" alt="" class="get-book__image">
+
+</section>
+
+<!-- FAQ -->
+<section class="faq container">
+    <div class="faq__heading">
+        FAQ
+    </div>
+    <div class="faq__lists">
+        <div class="faq__list">
+            <details class="faq__accordion">
+                <summary class="faq__accordion-summary">
+                    <span class="faq__accordion-summary-text">
+                        What is the cost of a mobile application?
+                    </span>
+                    <div class="faq__accordion-summary-button">
+                        <img class="faq__accordion-summary-icon" src="/src/assets/svg/plus.svg" alt="">
+                    </div>
+                </summary>
+                <div class="faq__accordion-content">
+                    Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
+                    Average development time from start to finished application:
+                    Medium projects up to 3 months.
+                    Large projects about 4-6 months.
+                    To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                </div>
+            </details>
+            <details class="faq__accordion">
+                <summary class="faq__accordion-summary">
+                    <span class="faq__accordion-summary-text">
+                        Do you provide a guarantee for the mobile application?
+                    </span>
+                    <div class="faq__accordion-summary-button">
+                        <img src="/src/assets/svg/plus.svg" alt="">
+                    </div>
+                </summary>
+                <div class="faq__accordion-content">
+                    Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
+                    Average development time from start to finished application:
+                    Medium projects up to 3 months.
+                    Large projects about 4-6 months.
+                    To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                </div>
+            </details>
+        </div>
+        <div class="faq__list">
+            <details class="faq__accordion">
+                <summary class="faq__accordion-summary">
+                    <span class="faq__accordion-summary-text">
+                        How long will development take?
+                    </span>
+                    <div class="faq__accordion-summary-button">
+                        <img src="/src/assets/svg/plus.svg" alt="">
+                    </div>
+                </summary>
+                <div class="faq__accordion-content">
+                    Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
+                    Average development time from start to finished application:
+                    Medium projects up to 3 months.
+                    Large projects about 4-6 months.
+                    To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                </div>
+            </details>
+            <details class="faq__accordion">
+                <summary class="faq__accordion-summary">
+                    <span class="faq__accordion-summary-text">
+                        I will not tell my idea, do you guarantee confidentiality?
+                    </span>
+                    <div class="faq__accordion-summary-button">
+                        <img src="/src/assets/svg/plus.svg" alt="">
+                    </div>
+                </summary>
+                <div class="faq__accordion-content">
+                    Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
+                    Average development time from start to finished application:
+                    Medium projects up to 3 months.
+                    Large projects about 4-6 months.
+                    To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                </div>
+            </details>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer container">
+    <h2 class="footer__heading">IT WEBSITE</h2>
+    <div class="footer__content">
+        <div class="footer__phone footer__content-item">
+            <div class="footer__phone-top footer__item-top">
+                <img src="src/assets/svg/smartphone-gray.svg" alt="" sizes="" srcset="">
+
+                <span class="footer__phone-text footer__item-top-text">Contact nums</span>
+            </div>
+            <div class="footer__phone-bottom footer__item-bottom">
+                <span class="footer__phone-number">
+                    +7 (778) 395 90 26
+                </span>
+            </div>
+        </div>
+        <div class="footer__post footer__content-item">
+            <div class="footer__post-top footer__item-top">
+                <img src="src/assets/svg/mail-gray.svg" alt="" srcset="">
+
+                <span class="footer__post-text footer__item-top-text">
+                    Post
+                </span>
+            </div>
+            <div class="footer__post-bottom footer__item-bottom">
+                mail@mail.ru
+            </div>
+        </div>
+        <div class="footer__address footer__content-item">
+            <div class="footer__address-top footer__item-top">
+                <img src="src/assets/svg/location.svg" alt="" srcset="">
+
+                <span class="footer__address-text footer__item-top-text">
+                    Address
+                </span>
+            </div>
+
+            <div class="footer__address-bottom footer__item-bottom">
+                City city, steet st. 90
+            </div>
+        </div>
+        <div class="footer__leave-request footer__content-item">
+            <div class="footer__leave-request-top footer__item-top">
+                <img src="src/assets/svg/document.svg" alt="" srcset="">
+                <span class="footer__leave-request-text footer__item-top-text">
+                    Leave a request
+                </span>
+            </div>
+            <div class="footer__leave-request-bottom footer__item-bottom">
+                Leave a request
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <img class="footer__bottom-icon" src="src/assets/svg/continent.svg" alt="">
+        <span class="footer__bottom-text">We work throughout world</span>
+    </div>
+</footer>
+
+<script>
+    // Скрытие хедера при скролле вниз
+    const header = document.querySelector('.header')
+    let prevScrollState = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollState = window.scrollY;
+        const isHeaderHidden = header.classList.contains('header_hidden')
+
+        if (currentScrollState > prevScrollState && !isHeaderHidden)
+            header.classList.add('header_hidden')
+
+        if (currentScrollState < prevScrollState && isHeaderHidden)
+            header.classList.remove('header_hidden')
+
+        prevScrollState = currentScrollState
+    })
+
+
+
+    // Нажатие на бургер-меню в хедере
+    let menu = null;
+    document.querySelector('.header__burger-icon').addEventListener('click', () => {
+        menu = document.querySelector('.menu');
+        menu.classList.add('menu_active');
+    });
+
+
+
+    // Нажатие на крестик в меню
+    document.querySelector('.menu__close-icon').addEventListener('click', () => {
+        menu.classList.remove('menu_active')
+    });
+
+
+
+    // Делаем таб активным по клику
+    let projectTabs = [...document.querySelectorAll('.projects__tab')];
+    let currentTab = projectTabs[0];
+    projectTabs.forEach((projectTab) => {
+        projectTab.addEventListener('click', (e) => {
+
+            const className = 'projects__tab_selected';
+
+            if (!e.target.id !== currentTab.id) {
+                // e.target - другой таб, отличающийся от currentTab
+                // => убираем у currentTab модификатор selected
+                currentTab.classList.remove(className);
+
+                // Новому табу даем тот же модификатор
+                e.target.classList.add(className);
+                currentTab = e.target;
+            }
+        })
+    })
+</script>
 </body>
 </html>
