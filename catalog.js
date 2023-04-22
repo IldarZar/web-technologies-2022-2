@@ -2,7 +2,7 @@ import { Catalog } from "./src/components/catalog.js"
 
 const renderPostItem = item => `
     <a  
-        href="posts/${item.id}"
+        href="post.html?id=${item.id}"
         class="post-item"
     >
         <span class="post-item__title">
@@ -15,13 +15,15 @@ const renderPostItem = item => `
     </a>
 `
 
-const getPostItems = ({ limit, page }) => {
-    return fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`)
-        .then(async res => {
-            const total = +res.headers.get('x-total-count')
-            const items = await res.json()
-            return { items, total }
-        })
+const getPostItems = async ({ limit, page }) => {
+    try {
+        const responsePosts = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`)
+        const total = await responsePosts.headers.get('x-total-count');
+        const items = await responsePosts.json();
+        return { items, total };
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 const renderPhotoItem = item => `
@@ -40,13 +42,17 @@ const renderPhotoItem = item => `
     </a>
 `
 
-const getPhotoItems = ({ limit, page }) => {
-    return fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${limit}&_page=${page}`)
-        .then(async res => {
-            const total = +res.headers.get('x-total-count')
-            const items = await res.json()
-            return { items, total }
-        })
+const getPhotoItems = async ({ limit, page }) => {
+    try {
+        const responsePhotos = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${limit}&_page=${page}`);
+        const total = await responsePhotos.headers.get('x-total-count');
+        const items = await responsePhotos.json();
+
+        return { items, total };
+    } catch (e) {
+        console.log(e);
+    }
+
 }
 
 const init = () => {
