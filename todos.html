@@ -18,14 +18,40 @@
 </header>
 
 <main class="main">
+    <form
+        id="todo-form"
+        class="form"
+    >
+        <label class="text-field">
+            <input
+                type="text"
+                class="text-field__input"
+                name="description"
+                placeholder="Description"
+            >
+            <span class="text-field__error"></span>
+        </label>
 
+        <button
+            type="submit"
+            class="button"
+        >
+            Добавить
+        </button>
+    </form>
 </main>
+
+<div>
+    <div class="todos">
+
+    </div>
+</div>
 
 <div class="loader-wrapper" data-loading>
     <img
-            src="./src/assets/icons/loader.svg"
-            alt=""
-            class="loader"
+        src="./src/assets/icons/loader.svg"
+        alt=""
+        class="loader"
     >
 </div>
 
