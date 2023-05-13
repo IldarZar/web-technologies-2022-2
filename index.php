@@ -30,68 +30,74 @@
 -->
 
 <?php
-  function secondScript(float $startNumber) {
-    for ($i=$startNumber; $i < 15; $i++) { 
-      echo '<br>';
-      switch ($i) {
-        case 0:
-          print_r($i);
-          break;
-        case 1:
-          print_r($i);
-          break;
-        case 2:
-          print_r($i);
-          break;
-        case 3:
-          print_r($i);
-          break;  
-        case 4:
-          print_r($i);
-          break;
-        case 5:
-          print_r($i);
-          break;
-        case 6:
-          print_r($i);
-          break;
-        case 7:
-          print_r($i);
-          break;   
-        case 8:
-          print_r($i);
-          break;
-        case 9:
-          print_r($i);
-          break;
-        case 10:
-          print_r($i);
-          break;
-        case 11:
-          print_r($i);
-          break;  
-        case 12:
-          print_r($i);
-          break;
-        case 13:
-          print_r($i);
-          break;
-        case 14:
-          print_r($i);
-          break;
-        case 15:
-          print_r($i);
-          break;    
-      }
+  function secondScriptVar1(int $a) {
+    switch ($a) {
+        case ($a <= 15):
+            for ($i = $a; $i <= 15; $i++) {
+              print_r($i . " ");
+            }
+            break;
     }
   }
 
-  secondScript(6);
+  function secondScriptVar2(int $a) {
+      switch ($a) {
+          case 0:
+              print_r('0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 1:
+              print_r('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 2:
+              print_r('2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 3:
+              print_r('3 4 5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 4:
+              print_r('4 5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 5:
+              print_r('5 6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 6:
+              print_r('6 7 8 9 10 11 12 13 14 15');
+              break;
+          case 7:
+              print_r('7 8 9 10 11 12 13 14 15');
+              break;
+          case 8:
+              print_r('8 9 10 11 12 13 14 15');
+              break;
+          case 9:
+              print_r('9 10 11 12 13 14 15');
+              break;
+          case 10:
+              print_r('10 11 12 13 14 15');
+              break;
+          case 11:
+              print_r('11 12 13 14 15');
+              break;
+          case 12:
+              print_r('12 13 14 15');
+              break;
+          case 13:
+              print_r('13 14 15');
+              break;
+          case 14:
+              print_r('14 15');
+              break;
+          case 15:
+              print_r('15');
+              break;
+      }
+  }
 
+  secondScriptVar1(15);
 ?>
 
 <!-- 
-  3. ​​Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
+  3. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
   Обязательно использовать оператор return.
  -->
 <?php 
