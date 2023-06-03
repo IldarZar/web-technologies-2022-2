@@ -22,7 +22,7 @@ var_dump($_FILES);
         }
 
         // Проверка на тип файла
-        if ($file['type'] != 'image/jpeg') {
+        if ($file['type'] != 'image/jpeg' && $file['type'] != 'image/png') {
             $_SESSION['message'] = "Ошибка. Файл не является картинкой";
             header("Location: ?page=gallery");
             die();
